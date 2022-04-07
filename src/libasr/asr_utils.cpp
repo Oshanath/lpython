@@ -748,8 +748,8 @@ ASR::asr_t* make_ImplicitCast_t_value(Allocator &al, const Location &a_loc, ASR:
             }
             else if(a_kind == ASR::cast_kindType::IntegerToInteger){
                 // TODO: implement 
-                int64_t v = ASR::down_cast<ASR::ConstantInteger_t>(ASRUtils::expr_value(a_arg))->m_n;
-                value = ASR::down_cast<ASR::expr_t>(ASR::make_ConstantInteger_t(al, a_loc, v, a_type));
+                // int64_t value = ASR::down_cast<ASR::ConstantInteger_t>(ASRUtils::expr_value(a_arg))->m_n;
+                // n->m_value = ASR::down_cast<ASR::expr_t>(ASR::make_ConstantInteger_t(al, a_loc, value, a_type));
             }
             else if(a_kind == ASR::cast_kindType::IntegerToLogical){
                 // TODO implement
